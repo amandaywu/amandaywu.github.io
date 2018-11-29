@@ -1,0 +1,235 @@
+@font-face {
+	font-family: "Ostrich Sans";
+	src: url(OstrichSans-Bold.otf);
+	font-weight: bold;
+}
+@font-face {
+	font-family: "Segoe UI Symbol";
+	src: url(seguisym.ttf);
+}
+@font-face {
+	font-family: "Tangerine";
+	src: url(Tangerine-Regular.ttf);
+}
+@font-face {
+	font-family: "Tangerine";
+	src: url(Tangerine-Bold.ttf);
+	font-weight: bold;
+}
+#header {
+	background-color: #181818;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: white;
+	font-size: 20px;
+	width: 100%;
+}
+#logo {
+	position: relative;
+	top: 3px;
+	left: -4.3%;
+}
+.top {
+	font-family: "Ostrich Sans", sans serif;
+	font-weight: bold;
+	color: #707070;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-top: 15px;
+	position: relative;
+	left: -4.3%;
+}
+.top:hover {
+	background: linear-gradient(to left, #60CFFE 0%, #49DEB7 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+}
+.top:active {
+	opacity: 0.5;
+	cursor: default;
+}
+#search-bar {
+	color: #707070;
+	/*padding-left: 6px;
+	margin: 16px;
+	width: 300px;
+	background: white;
+	border-radius: 12px;*/
+	position: relative;
+	padding: 1px 1px 1px 1px;
+	background: white;
+	border-radius: 35px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#search-icon {
+	position: relative;
+	top: 4px;
+}
+body {
+	background-color: #232323;
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI Symbol", sans-serif;
+	font-size: 16px;
+	color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#photo {
+	opacity: 0.5;
+	position: static;
+	width: 100%;
+}
+#title {
+	font-family: "Ostrich Sans", sans-serif;
+	font-weight: bold;
+	font-size: 64px;
+	position: absolute;
+	bottom: 15%;
+	background: linear-gradient(to left, #60CFFE 0%, #49DEB7 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#artist {
+	font-family: "Ostrich Sans", sans-serif;
+	font-size: 32px;
+	position: absolute;
+	bottom: 5%;
+}
+#title:hover, #artist:hover {
+	color: white;
+	cursor: pointer;
+}
+#title:active, #artist:active {
+	opacity: 0.5;
+	cursor: default;
+}
+#content {
+	display: flex;
+	flex-direction: column;
+	color: black;
+	font-family: "Segoe UI Symbol", sans-serif;
+	text-align: center;
+}
+#commands {
+	color: black;
+	background-color: white;
+	padding: 8px;
+	border-radius: 12px;
+	position: fixed;
+	transform: translateX(-265%);
+	z-index: 1;
+}
+#texts {
+	background-color: white;
+	border-radius: 12px;
+	z-index: 2;
+}
+.button:hover, .text:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+.button:active, .text:active {
+	cursor: default;
+	opacity: 1;
+}
+.text {
+	position: relative;
+	bottom: 6px;
+	padding-right: 12px;
+}
+#container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.row {
+	padding: 4px;
+}
+.button {
+	padding-left: 8px;
+}
+.button:visited {
+	color: blue;
+}
+.command-item:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+.command-item:active {
+	cursor: default;
+	opacity: 1;
+}
+.line:hover {
+	background: linear-gradient(to left, #60CFFE 0%, #49DEB7 100%);
+	background-color: fade(, 50%)
+	opacity: 0.5;
+	background-blend-mode: screen;
+	color: black;
+	transition: 0.3s;
+}
+.verse {
+	padding: 8px;
+}
+#footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	max-width: 100%;
+	background-color: #181818;
+	font-family: "Segoe UI Symbol", sans-serif;
+}
+#footer-button {
+	display: flex;
+	flex-direction: row;
+	color: white;
+	font-size: 16px;
+}
+.footer-item {
+	padding: 12px 48px;
+	cursor: pointer;
+}
+.footer-item:hover {
+	background: linear-gradient(to left, #60CFFE 0%, #49DEB7 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.footer-item:active {
+	cursor: default;
+	opacity: 0.5;
+}
+#copyright, #disclaimer {
+	color: #707070;
+	font-size: 12px;
+	align-items: center;
+}
+@media screen and (max-width: 1100px) {
+	.top {
+		display: none;
+	}
+	#commands {
+		display: none;
+	}
+}
+@media screen and (max-width: 750px) {
+	#content {
+		font-size: 14px;
+	}
+	#footer-button {
+		font-size: 12px;
+	}
+	#disclaimer, #copyright {
+		font-size: 8px;
+	}
+}
