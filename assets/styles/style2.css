@@ -38,9 +38,9 @@ body {
     color: #707070;
     padding-left: 8px;
     padding-right: 8px;
-    margin-top: 20px;
-    position: relative;
-    left: -5%;
+    margin-top: 15px;
+    position: absolute;
+    /*left: -15%;*/
 }
 .top:hover {
     background: linear-gradient(to left, #60CFFE 0%, #49DEB7 100%);
@@ -56,14 +56,17 @@ body {
     font-family: "Segoe UI Symbol", sans-serif;
     font-size: 16px;
     position: relative;
-    padding: 4px 16px;
-    margin: 16px;
+    padding: 4px 10px;
+    margin: 10px;
     color: #181818;
     background: linear-gradient(to left, #60CFFE 0%, #49DEB7 100%);
     border-radius: 50px;
     cursor: pointer;
     opacity: 0.8;
-    left: 5%;
+    /*position: absolute; right: 0;*/
+    /*align-content: flex-end;*/
+    /*position: absolute;*/
+    left: 30%;
 }
 .button:hover {
     opacity: 1;
@@ -88,11 +91,16 @@ body {
 }
 #search-bar {
     /*color: #707070;*/
-    padding: 8px 10px 10px 8px;
+    /*padding: 8px 10px 10px 8px;*/
     background: white;
     border-radius: 35px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+    /*align-items: center;*/
+    /*align-content: center;*/
+    position: relative;
+    /*position: absolute;*/
+
 }
 #search-icon {
     position: relative;
@@ -102,7 +110,7 @@ body {
     background: linear-gradient(to left, #60CFFE 0%, #49DEB7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    position: relative;
+    position: absolute;
     top: 48px;
     cursor: default;
 }

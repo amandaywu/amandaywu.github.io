@@ -37,7 +37,7 @@ body {
 	padding-left: 8px;
 	padding-right: 8px;
 	margin-top: 10px;
-	position: relative;
+	position: absolute;
 	/*left: -5%;*/
 }
 .top:hover {
@@ -55,13 +55,13 @@ body {
 	font-size: 16px;
 	position: relative;
 	padding: 4px 16px;
-	margin: 16px;
+	margin: 6px;
 	color: #181818;
 	background: linear-gradient(to left, #60CFFE 0%, #49DEB7 100%);
 	border-radius: 50px;
 	cursor: pointer;
 	opacity: 0.8;
-	left: 5%;
+	left: 30%;
 }
 .button:hover {
 	opacity: 1;
